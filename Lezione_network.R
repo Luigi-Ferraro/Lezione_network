@@ -1,7 +1,7 @@
 ##################################################################
 ############ Network Analisys
 ##################################################################
-
+# Based on https://kateto.net/networks-r-igraph
 
 ##################################################################
 ############ Importa il pacchetto
@@ -219,8 +219,8 @@ library(readr)
 
 ############ Lista di archi
 #nodes <- read_csv("C:/Users/luigi/Desktop/Lezioni/nets/preliminary/Media_nodi.csv")
-nodes <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/preliminary/Media_nodi.csv")
-links <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/preliminary/Media_archi.csv")
+nodes <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/networks_input/Media_nodi.csv")
+links <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/networks_input/Media_archi.csv")
 
 
 ############ Aggrega archi comuni
@@ -236,8 +236,8 @@ rownames(links) <- NULL
 
 ############ Matrice di adiacenza
 
-nodes2 <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/preliminary/Media_User_nodi.csv")
-links2 <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/preliminary/Media_User_archi.csv")
+nodes2 <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/networks_input/Media_User_nodi.csv")
+links2 <- read_csv("https://raw.githubusercontent.com/Luigi-Ferraro/Lezione_network/main/networks_input/Media_User_archi.csv")
 links2 <- as.matrix(links2)
 rownames(links2) = links2[,1]
 links2 = links2[,-1]
