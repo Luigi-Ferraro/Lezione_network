@@ -4,10 +4,11 @@
 # Based on https://kateto.net/networks-r-igraph
 
 ##################################################################
-############ Importa il pacchetto
+############ Importa i pacchetti
 ##################################################################
 
 library(igraph)
+library(readr)
 
 
 
@@ -527,7 +528,7 @@ plot(net, vertex.color=vcol)
 
 
 ##################################################################
-############ Communieties
+############ Communities
 ##################################################################
 
 ############ Convertire un grafo diretto in uno indiretto
